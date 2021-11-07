@@ -8,12 +8,22 @@
    <meta name="supported-color-schemes" content="light dark">
 	<title>Disney Fan Friday</title>
    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+      /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'); */
+      @import url("https://use.typekit.net/vwx8qne.css");
    
       body {
             margin: 0;
             padding: 0;
             background-color: #fff;
+        }
+
+        .nav-item {
+           color: #000;
+           margin: 0 25px;
+           text-decoration: none;
+           font-weight: 600;
+           font-family: 'Noto Sans', sans-serif;
+           font-size: 13px;
         }
       
       @media screen and (max-width: 650px) {
@@ -77,11 +87,11 @@
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
-                     <td style="text-align: center;padding: 12px 0;font-weight: 400;text-decoration: none;">
-                        <a href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;;">DISNEY</a>
-                        <a href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;">PIXER</a>
-                        <a href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;">STAR WARS</a>
-                        <a href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;">MARVEL</a>
+                     <td style="text-align: center;padding: 12px 0;">
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">DISNEY</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">PIXER</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">STAR WARS</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">MARVEL</a>
                         
                      </td>
                   </tr>
