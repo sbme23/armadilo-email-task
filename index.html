@@ -32,58 +32,69 @@
            color: inherit;
         }
 
-   @media screen and (max-width: 640px) {
-        
-      .logo-padding {
-         padding: 10px!important;
-        }
-      
-      .logo-top {
-           width: 200px;
-        }
+        @media screen and (min-width: 640.1px) {
 
-      .nav-padding {
-           padding: 25px 0 !important;
+        .hide-desktop {
+           display: none;
         }
-
-      .nav-item {
-           font-size: 26px;
-           margin-right: 20px;
-        }
-
-         .text-content h1 {
-           font-size: 38px!important;
-           padding: 0 100px;
-      }
-             
-        .text-content p {
-           font-size: 28px!important;
-           padding: 5px!important;
       }
 
-       .test-button {
-          font-size: 30px;
-          padding: 30px 150px!important
-       }
+      @media screen and (max-width: 640px) {
+         
+         .logo-padding {
+            padding: 10px!important;
+         }
+         
+         .logo-top {
+            width: 200px;
+         }
 
-   }
-
-
-
-        
-
-   @media screen and (max-width: 400px) {
+         .nav-padding {
+            padding: 25px 0 !important;
+         }
 
          .nav-item {
-           margin: 15px;
-           
-        }
+            font-size: 26px;
+            margin-right: 20px;
+         }
 
-        .content {
-           padding: 25px!important;
-        }
+            .text-content h1 {
+            font-size: 38px!important;
+            padding: 0 100px;
+         }
+               
+         .text-content p {
+            font-size: 28px!important;
+            padding: 5px!important;
+         }
 
-   }
+         .button-padding {
+            font-size: 30px;
+            padding: 30px 150px!important
+         }
+
+         .hide-mobile {
+            display: none;
+         }
+
+      }
+
+
+/* Leave these stylings as I don't have the time to complete.  */
+        
+
+      @media screen and (max-width: 400px) {
+
+            .nav-item {
+            margin: 15px;
+            
+         }
+
+         .content {
+            padding: 25px!important;
+         }
+
+      }
 
 
 
@@ -168,14 +179,15 @@
 
          <tr class="content-container">
             <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0 0 0 0;">
+               <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0;">
                   <tr class="text-content">
                      <td style="text-align: center;padding: 12px 0;font-family: 'Noto Sans', sans-serif;font-size: 16px; font-weight: 400;text-decoration: none;color: #333333;">
                         <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 28px;font-weight: bold;">50% off Fan Favourites for 24 Hours!</h1>
                         <p>1. Visit shopdisney.co.uk/fan-friday.</p>
                         <p>2. Select any items from this page and add them to your basket.</p>
-                        <p>3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout</p>
-                        <p>to receive 50% off these items.</p>               
+                        <p class="hide-mobile">3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout</p>
+                        <p class="hide-mobile">to receive 50% off these items.</p>  
+                        <p class="hide-desktop">3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout to receive 50% off these items.</p>   
                      </td>
                   </tr>
                </table>
@@ -192,7 +204,7 @@
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 20px 0 40px 0;font-size: 17px; font-weight: 500;text-decoration: none;font-family: 'Noto Sans', sans-serif;">
-                        <a class="test-button" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
+                        <a class="button-padding" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
                      </td>
                   </tr>
                </table>
