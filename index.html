@@ -8,7 +8,7 @@
    <meta name="supported-color-schemes" content="light dark"> -->
 	<title>Disney Fan Friday</title>
    <style type="text/css">
-      /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'); */
+         
       @import url("https://use.typekit.net/vwx8qne.css");
    
 
@@ -32,15 +32,47 @@
            color: inherit;
         }
 
-      @media screen and (max-width: 650px) {
+   @media screen and (max-width: 640px) {
         
-         .nav-item {
-           margin: 17px;
-           
+      .logo-padding {
+         padding: 10px!important;
         }
-}
+      
+      .logo-top {
+           width: 200px;
+        }
 
-      @media screen and (max-width: 400px) {
+      .nav-padding {
+           padding: 25px 0 !important;
+        }
+
+      .nav-item {
+           font-size: 26px;
+           margin-right: 20px;
+        }
+
+         .text-content h1 {
+           font-size: 38px!important;
+           padding: 0 100px;
+      }
+             
+        .text-content p {
+           font-size: 28px!important;
+           padding: 5px!important;
+      }
+
+       .test-button {
+          font-size: 30px;
+          padding: 30px 150px!important
+       }
+
+   }
+
+
+
+        
+
+   @media screen and (max-width: 400px) {
 
          .nav-item {
            margin: 15px;
@@ -48,10 +80,12 @@
         }
 
         .content {
-           
+           padding: 25px!important;
         }
-   
-}
+
+   }
+
+
 
    </style>
 
@@ -69,13 +103,13 @@
 
 <!-- Shop Disney Logo Start -->
 
-         <tr class="logo-top">
-            <td style="padding: 0;">
+         <tr>
+            <td class="logo-padding" style="padding: 0px;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
 
                   <tr>
                      <td style="background-color: #fff;padding: 10px 0;" align="center" >
-                        <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg" alt="Shop Disney Logo"></a>
+                        <a href="https://www.shopdisney.co.uk/" target="_blank"><img class="logo-top" src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg" alt="Shop Disney Logo"></a>
                      </td>
                   </tr>
                   
@@ -101,8 +135,8 @@
 
 <!-- Sub Nav Menu Start -->
 
-         <tr class="nav-container">
-            <td style="padding: 0;">
+         <tr>
+            <td  class="nav-padding" style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 12px 0;">
@@ -132,12 +166,12 @@
 <!-- Main Copy Start -->
 
 
-         <tr class="content">
+         <tr class="content-container">
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0 0 0 0;">
-                  <tr>
+                  <tr class="text-content">
                      <td style="text-align: center;padding: 12px 0;font-family: 'Noto Sans', sans-serif;font-size: 16px; font-weight: 400;text-decoration: none;color: #333333;">
-                        <p  style="font-family: Arial, Helvetica, sans-serif;font-size: 28px;font-weight: bold;">50% off Fan Favourites for 24 Hours!</p>
+                        <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 28px;font-weight: bold;">50% off Fan Favourites for 24 Hours!</h1>
                         <p>1. Visit shopdisney.co.uk/fan-friday.</p>
                         <p>2. Select any items from this page and add them to your basket.</p>
                         <p>3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout</p>
@@ -158,7 +192,7 @@
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 20px 0 40px 0;font-size: 17px; font-weight: 500;text-decoration: none;font-family: 'Noto Sans', sans-serif;">
-                        <a href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
+                        <a class="test-button" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
                      </td>
                   </tr>
                </table>
