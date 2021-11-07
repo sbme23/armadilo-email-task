@@ -4,20 +4,22 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark">
+   <!-- <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark"> -->
 	<title>Disney Fan Friday</title>
    <style type="text/css">
       /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'); */
       @import url("https://use.typekit.net/vwx8qne.css");
    
+
       body {
             margin: 0;
             padding: 0;
             background-color: #fff;
-        }
+            min-width: 100%;
+      }
 
-        .nav-item {
+      .nav-item {
            color: #000;
            margin: 0 25px;
            text-decoration: none;
@@ -25,23 +27,33 @@
            font-family: 'Noto Sans', sans-serif;
            font-size: 13px;
         }
-      
+
         a {
            color: inherit;
         }
 
       @media screen and (max-width: 650px) {
-
-   
+        
+         .nav-item {
+           margin: 17px;
+           
+        }
 }
 
       @media screen and (max-width: 400px) {
+
+         .nav-item {
+           margin: 15px;
+           
+        }
+
+        .content {
+           
+        }
    
 }
 
    </style>
-
-     
 
 </head>
 <body>
@@ -49,13 +61,15 @@
 <!-- Centering all content  -->
 
 <center style="background-color: #333333;width: 100%;table-layout: fixed;" >
-   <div style="max-width: 650px;">
+   <div style="width: 100%; max-width: 650px;">
 
-      <table align="center" style="background-color: #fff;border-spacing: 0;font-family: Arial, Helvetica, sans-serif;Margin: 0;width: 100%; max-width: 650px;">
+<!-- MAIN TABLE TAG  -->
+
+      <table align="center" style="background-color: #fff;border-spacing: 0;font-family: Arial, Helvetica, sans-serif;Margin: 0 auto;padding: 0; width: 100%; max-width: 650px;">
 
 <!-- Shop Disney Logo Start -->
 
-         <tr>
+         <tr class="logo-top">
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
 
@@ -87,15 +101,15 @@
 
 <!-- Sub Nav Menu Start -->
 
-         <tr>
+         <tr class="nav-container">
             <td style="padding: 0;">
-               <table width="650px" style="border-spacing: 0;max-width: 100%;">
+               <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 12px 0;">
                         <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">DISNEY</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">PIXER</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">STAR WARS</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank" style="margin: 0 25px;text-decoration: none;">MARVEL</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">PIXER</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">STAR WARS</a>
+                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">MARVEL</a>
                         
                      </td>
                   </tr>
@@ -106,19 +120,19 @@
 <!-- Sub Nav Menu End -->
 
 <!-- Hero Image Start -->
-         <tr>
-            <td style="padding: 0;">
-            <table width="100%" style="border-spacing: 0;max-width: 650px;">
-               <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg" alt=""></a>
-            </td>
-         </tr>
+
+<tr>
+   <td style="padding: 0;border-spacing: 0;">
+      <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg" alt="" width="100%" style="max-width: 650px;"></a>
+   </td>
+</tr>
 
 <!-- Hero Image End -->
 
 <!-- Main Copy Start -->
 
 
-         <tr>
+         <tr class="content">
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0 0 0 0;">
                   <tr>
@@ -188,8 +202,6 @@
 <!-- Footer Social End -->
 
 <!-- Footer Location Start -->
-
-<!-- STILL NEED TO ALIGN THE ICON AND TEXT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
          <tr>
             <td style="padding: 0;">
