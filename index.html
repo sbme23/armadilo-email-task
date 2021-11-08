@@ -41,67 +41,77 @@
 
       @media screen and (max-width: 640px) {
          
-         .logo-padding {
+         .logo-mobile-padding {
             padding: 10px!important;
          }
          
-         .logo-top {
-            width: 200px;
+         .logo-mobile-width {
+            width: 200px!important;
          }
 
-         .nav-padding {
-            padding: 25px 0 !important;
+         .nav-moile-padding {
+            padding: 25px 0!important;
          }
 
-         .nav-item {
-            font-size: 26px;
-            margin-right: 20px;
+         .nav-mobile-item {
+            font-size: 26px!important;
+            margin-right: 20px!important;
          }
 
-            .text-content h1 {
+         .text-mobile h1 {
             font-size: 38px!important;
-            padding: 0 100px;
+            padding: 0 100px!important;
          }
                
-         .text-content p {
+         .text-mobile p {
             font-size: 28px!important;
-            padding: 5px!important;
+            padding: 5px 65px!important;
          }
 
-         .button-padding {
-            font-size: 30px;
-            padding: 30px 150px!important
+         .button-mobile {
+            font-size: 30px!important;
+            padding: 32.5px 145px!important
          }
 
          .hide-mobile {
             display: none;
          }
 
-         .divider-padding {
+         .divider-mobile-padding {
             padding-top: 70px!important;
          }
 
-         .follow-us {
-            font-size: 38px!important;
-         }
-         .social-logo {
-            width: 150px!important;
+         .divider-mobile-size {
+            width: 375px!important;
          }
 
-         .location-icon {
+
+         .mobile-follow-us {
+            font-size: 38px!important;
+         }
+         
+         /* Need to use an SVG or 
+         higher res jpeg as there's 
+         issues on the mobile view */
+
+         .mobile-social-logo {
+            width: 150px!important;
+            padding: 0 40px!important;
+         }
+
+         .location-mobile-icon {
             width: 25px;
             padding-bottom: 15px!important;
          }
 
-         .location-text {
+         .location-mobile-text {
             font-size: 32.5px!important;
          }
 
-         .footer-text {
+         .footer-mobile-text {
             font-size: 28px!important;
          }
-
-      }
+   }
 
 
 /* Leave these stylings as I don't have the time to complete.  */
@@ -109,14 +119,6 @@
 
       @media screen and (max-width: 400px) {
 
-            .nav-item {
-            margin: 15px;
-            
-         }
-
-         .content {
-            padding: 25px!important;
-         }
 
       }
 
@@ -139,12 +141,12 @@
 <!-- Shop Disney Logo Start -->
 
          <tr>
-            <td class="logo-padding" style="padding: 0px;">
+            <td class="logo-mobile-padding" style="padding: 0px;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
 
                   <tr>
                      <td style="background-color: #fff;padding: 10px 0;" align="center" >
-                        <a href="https://www.shopdisney.co.uk/" target="_blank"><img class="logo-top" src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg" alt="Shop Disney Logo"></a>
+                        <a href="https://www.shopdisney.co.uk/" target="_blank"><img class="logo-mobile-width" src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg" alt="Shop Disney Logo"></a>
                      </td>
                   </tr>
                   
@@ -171,14 +173,14 @@
 <!-- Sub Nav Menu Start -->
 
          <tr>
-            <td  class="nav-padding" style="padding: 0;">
+            <td  class="nav-moile-padding" style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 12px 0;">
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">DISNEY</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">PIXER</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">STAR WARS</a>
-                        <a class="nav-item" href="https://www.shopdisney.co.uk/" target="_blank">MARVEL</a>
+                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">DISNEY</a>
+                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">PIXER</a>
+                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">STAR WARS</a>
+                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">MARVEL</a>
                         
                      </td>
                   </tr>
@@ -190,21 +192,21 @@
 
 <!-- Hero Image Start -->
 
-<tr>
-   <td style="padding: 0;border-spacing: 0;">
-      <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg" alt="" width="100%" style="max-width: 650px;"></a>
-   </td>
-</tr>
+         <tr>
+            <td style="padding: 0;border-spacing: 0;">
+               <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg" alt="" width="100%" style="max-width: 650px;"></a>
+            </td>
+         </tr>
 
 <!-- Hero Image End -->
 
 <!-- Main Copy Start -->
 
 
-         <tr class="content-container">
+         <tr>
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0;">
-                  <tr class="text-content">
+                  <tr class="text-mobile">
                      <td style="text-align: center;padding: 12px 0;font-family: 'Noto Sans', sans-serif;font-size: 16px; font-weight: 400;text-decoration: none;color: #333333;">
                         <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 28px;font-weight: bold;">50% off Fan Favourites for 24 Hours!</h1>
                         <p>1. Visit <a href="https://www.shopdisney.co.uk/">shopdisney.co.uk/fan-friday</a>.</p>
@@ -228,7 +230,7 @@
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;padding: 20px 0 40px 0;font-size: 17px; font-weight: 500;text-decoration: none;font-family: 'Noto Sans', sans-serif;">
-                        <a class="button-padding" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
+                        <a class="button-mobile" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
                      </td>
                   </tr>
                </table>
@@ -240,11 +242,11 @@
 <!-- Divider Start -->
 
          <tr>
-            <td class="divider-padding" style="padding: 20px; ">
+            <td class="divider-mobile-padding" style="padding: 20px; ">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td align="center">
-                        <img src="https://i.ibb.co/WnLqw86/divider.jpg" alt="Divider">        
+                        <img class="divider-mobile-size" src="https://i.ibb.co/WnLqw86/divider.jpg" alt="Divider">        
                      </td>
                   </tr>
                </table>
@@ -255,16 +257,16 @@
 
 <!-- Footer Social Start -->
 
-<!-- Need to use an SVG of higher red jpeg as there's issues on the mobile view -->
+<!-- Need to use an SVG or higher res jpeg as there's issues on the mobile view -->
 
          <tr>
             <td style="padding: 0 0 30px 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
                      <td style="text-align: center;">
-                        <p class="follow-us" style="font-size: 20px;color: #0099ff;font-family: 'Noto Sans', sans-serif;">Follow us</p>
-                        <a href="" target="_blank"><img class="social-logo" src="https://i.ibb.co/gjqPX52/facebook-icon.jpg" alt="Facebook Logo" style="padding: 0 20px;"></a>
-                        <a href="" target="_blank"><img class="social-logo" src="https://i.ibb.co/brhV5j7/instagram-icon.jpg" alt="Instagram Logo" style="padding: 0 20px;"></a>       
+                        <p class="mobile-follow-us" style="font-size: 20px;color: #0099ff;font-family: 'Noto Sans', sans-serif;">Follow us</p>
+                        <a href="" target="_blank"><img class="mobile-social-logo" src="https://i.ibb.co/gjqPX52/facebook-icon.jpg" alt="Facebook Logo" style="padding: 0 20px;"></a>
+                        <a href="" target="_blank"><img class="mobile-social-logo" src="https://i.ibb.co/brhV5j7/instagram-icon.jpg" alt="Instagram Logo" style="padding: 0 20px;"></a>       
                      </td>
                   </tr>
                </table>
@@ -275,15 +277,13 @@
 
 <!-- Footer Location Start -->
 
-<!-- Need to use an SVG of higher red jpeg as there's issues on the mobile view -->
-
          <tr>
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;background-color: #f9f9f9;padding: 15px 0;">
                   <tr style="text-align: center;">
                      <td>
-                        <a href="https://www.shopdisney.co.uk" target="_blank"><img class="location-icon" src="https://i.ibb.co/KhBF93D/location-icon.jpg" alt="" style="vertical-align: middle; padding-bottom: 5px;"></a> 
-                        <a class="location-text" href="https://www.shopdisney.co.uk" target="_blank" style="font-size: 20px; text-decoration: none; color: #333333;padding-left: 10px;font-family: 'Noto Sans', sans-serif;">Find a Disney Store in your area</a>
+                        <a href="https://www.shopdisney.co.uk" target="_blank"><img class="location-mobile-icon" src="https://i.ibb.co/KhBF93D/location-icon.jpg" alt="" style="vertical-align: middle; padding-bottom: 5px;"></a> 
+                        <a class="location-mobile-text" href="https://www.shopdisney.co.uk" target="_blank" style="font-size: 20px; text-decoration: none; color: #333333;padding-left: 10px;font-family: 'Noto Sans', sans-serif;">Find a Disney Store in your area</a>
                      </td>
                   </tr>
                </table>
@@ -348,7 +348,7 @@
             <td style="padding: 0;">
                <table width="100%" style="border-spacing: 0;max-width: 650px;">
                   <tr>
-                     <td class="footer-text" style="text-align: left;padding: 12px 20px;font-size: 12px; text-decoration: none;">
+                     <td class="footer-mobile-text" style="text-align: left;padding: 12px 20px;font-size: 12px; text-decoration: none;">
                         
                         <p>Please do not reply to this communication, as unfortunately we cannot reply to you individually. 
                            This email has been sent as you have previously consented to receive updates and information from Disney. 
