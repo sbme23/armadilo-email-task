@@ -1,475 +1,656 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <meta name="color-scheme" content="light dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="color-scheme" content="light dark">
    <meta name="supported-color-schemes" content="light dark"> -->
-	<title>Disney Fan Friday</title>
-   <style type="text/css">
-         
+    <title>Disney Fan Friday</title>
+    <style type="text/css">
       @import url("https://use.typekit.net/vwx8qne.css");
-   
 
       body {
-            Margin: 0;
-            padding: 0;
-            background-color: #fff;
-            min-width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        min-width: 100%;
       }
 
       .nav-item {
-           color: #000;
-           margin: 0 25px;
-           text-decoration: none;
-           font-weight: 600;
-           font-family: 'Noto Sans', sans-serif;
-           font-size: 13px;
-        }
+        color: #000;
+        margin: 0 25px;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: "Noto Sans", sans-serif;
+        font-size: 13px;
+      }
 
-        a {
-           color: inherit;
-        }
+      a {
+        color: inherit;
+      }
 
-        @media screen and (min-width: 640.1px) {
-
+      @media screen and (min-width: 640.1px) {
         .hide-desktop {
-           display: none;
+          display: none;
         }
       }
 
       @media screen and (max-width: 640px) {
-         
-         .logo-mobile-padding {
-            padding: 10px!important;
-         }
-         
-         .logo-mobile-width {
-            width: 200px!important;
-         }
+        .logo-mobile-padding {
+          padding: 10px !important;
+        }
 
-         .nav-moile-padding {
-            padding: 25px 0!important;
-         }
+        .logo-mobile-width {
+          width: 200px !important;
+        }
 
-         .nav-mobile-item {
-            font-size: 26px!important;
-            margin-right: 15px!important;
-         }
+        .nav-moile-padding {
+          padding: 25px 0 !important;
+        }
 
-         .text-mobile h1 {
-            font-size: 38px!important;
-            padding: 0 90px!important;
-         }
-               
-         .text-mobile p {
-            font-size: 28px!important;
-            padding: 5px 65px!important;
-         }
+        .nav-mobile-item {
+          font-size: 26px !important;
+          margin-right: 15px !important;
+        }
 
-         .button-mobile {
-            font-size: 30px!important;
-            padding: 32.5px 145px!important
-         }
+        .text-mobile h1 {
+          font-size: 38px !important;
+          padding: 0 90px !important;
+        }
 
-         .hide-mobile {
-            display: none;
-         }
+        .text-mobile p {
+          font-size: 28px !important;
+          padding: 5px 65px !important;
+        }
 
-         .divider-mobile-padding {
-            padding-top: 70px!important;
-         }
+        .button-mobile {
+          font-size: 30px !important;
+          padding: 32.5px 145px !important;
+        }
 
-         .divider-mobile-size {
-            width: 375px!important;
-         }
+        .hide-mobile {
+          display: none;
+        }
 
+        .divider-mobile-padding {
+          padding-top: 70px !important;
+        }
 
-         .mobile-follow-us {
-            font-size: 38px!important;
-         }
-         
-         /* Need to use an SVG or 
+        .divider-mobile-size {
+          width: 375px !important;
+        }
+
+        .mobile-follow-us {
+          font-size: 38px !important;
+        }
+
+        /* Need to use an SVG or 
          higher res jpeg as there's 
          issues on the mobile view */
 
-         .mobile-social-logo {
-            width: 150px!important;
-            padding: 0 40px!important;
-         }
+        .mobile-social-logo {
+          width: 150px !important;
+          padding: 0 40px !important;
+        }
 
-         .location-mobile-icon {
-            width: 25px;
-            padding-bottom: 15px!important;
-         }
+        .location-mobile-icon {
+          width: 25px;
+          padding-bottom: 15px !important;
+        }
 
-         .location-mobile-text {
-            font-size: 32.5px!important;
-         }
+        .location-mobile-text {
+          font-size: 32.5px !important;
+        }
 
-         .footer-mobile-text {
-            font-size: 28px!important;
-         }
-   }
+        .footer-mobile-text {
+          font-size: 28px !important;
+        }
+      }
 
-
-/* Leave these stylings as I don't have the time to complete.  */
-        
+      /* Leave these stylings as I don't have the time to complete.  */
 
       @media screen and (max-width: 600px) {
-         
-         .nav-mobile-item {
-            font-size: 22px!important;
-            margin-right: 5px!important;
-         }
+        .nav-mobile-item {
+          font-size: 22px !important;
+          margin-right: 5px !important;
+        }
 
-         .text-mobile h1 {
-            font-size: 30px!important;
-            padding: 0 70px!important;
-         }
-               
-         .text-mobile p {
-            font-size: 24px!important;
-            padding: 5px 30px!important;
-         }
+        .text-mobile h1 {
+          font-size: 30px !important;
+          padding: 0 70px !important;
+        }
 
-         .button-mobile {
-            font-size: 24px!important;
-            padding: 20px 80px!important
-         }
+        .text-mobile p {
+          font-size: 24px !important;
+          padding: 5px 30px !important;
+        }
 
-         .mobile-follow-us {
-            font-size: 28px!important;
-         }
-         
-         /* Need to use an SVG or 
+        .button-mobile {
+          font-size: 24px !important;
+          padding: 20px 80px !important;
+        }
+
+        .mobile-follow-us {
+          font-size: 28px !important;
+        }
+
+        /* Need to use an SVG or 
          higher res jpeg as there's 
          issues on the mobile view */
 
-         .mobile-social-logo {
-            width: 85px!important;
-            padding: 10px 20px!important;
-         }
+        .mobile-social-logo {
+          width: 85px !important;
+          padding: 10px 20px !important;
+        }
 
-         .location-mobile-icon {
-            width: 20px;
-            padding-bottom: 15px!important;
-         }
+        .location-mobile-icon {
+          width: 20px;
+          padding-bottom: 15px !important;
+        }
 
-         .location-mobile-text {
-            font-size: 20px!important;
-         }
+        .location-mobile-text {
+          font-size: 20px !important;
+        }
 
-         .footer-mobile-text {
-            font-size: 18px!important;
-         }
-
+        .footer-mobile-text {
+          font-size: 18px !important;
+        }
       }
-
-
-
-
 
       @media screen and (max-width: 500px) {
-         
-         .nav-mobile-item {
-            font-size: 20px!important;
-            margin-right: 2px!important;
-         }
+        .nav-mobile-item {
+          font-size: 20px !important;
+          margin-right: 2px !important;
+        }
       }
 
-
       @media screen and (max-width: 450px) {
-         
-         .nav-mobile-item {
-            font-size: 18px!important;
-            margin-right: 2px!important;
-         }
+        .nav-mobile-item {
+          font-size: 18px !important;
+          margin-right: 2px !important;
+        }
       }
 
       @media screen and (max-width: 400px) {
-         
-         .nav-mobile-item {
-            font-size: 18px!important;
-            margin-right: 2px!important;
-         }
+        .nav-mobile-item {
+          font-size: 18px !important;
+          margin-right: 2px !important;
+        }
       }
-      
+    </style>
+  </head>
+  <body>
+    
+   <!-- Centering all content and fixed table size  -->
 
+    <center style="background-color: #333333; width: 100%; table-layout: fixed">
+      <div style="width: 100%; max-width: 650px">
+        
+         <!-- MAIN TABLE TAG  -->
 
-
-   </style>
-
-</head>
-<body>
-
-<!-- Centering all content and fixed table size  -->
-
-<center style="background-color: #333333;width: 100%;table-layout: fixed;" >
-   <div style="width: 100%; max-width: 650px;">
-
-<!-- MAIN TABLE TAG  -->
-
-      <table align="center" style="background-color: #fff;border-spacing: 0;font-family: Arial, Helvetica, sans-serif;Margin: 0 auto;padding: 0; width: 100%; max-width: 650px;">
-
-         <!--[if (gte mso 9)|(IE)]>
+        <table
+          align="center"
+          style="
+            background-color: #fff;
+            border-spacing: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            max-width: 650px;
+          "
+        >
+          <!--[if (gte mso 9)|(IE)]>
     <table width="650" align="center" stlye="border-spacing:0">
     <tr>
     <td>
     <![endif]-->
 
-<!-- Shop Disney Logo Start -->
+          <!-- Shop Disney Logo Start -->
 
-         <tr>
-            <td class="logo-mobile-padding" style="padding: 0px;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-
-                  <tr>
-                     <td style="background-color: #fff;padding: 10px 0;" align="center" >
-                        <a href="https://www.shopdisney.co.uk/" target="_blank"><img class="logo-mobile-width" src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg" alt="Shop Disney Logo"></a>
-                     </td>
-                  </tr>
-                  
-               </table>
+          <tr>
+            <td class="logo-mobile-padding" style="padding: 0px">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td
+                    style="background-color: #fff; padding: 10px 0"
+                    align="center"
+                  >
+                    <a href="https://www.shopdisney.co.uk/" target="_blank"
+                      ><img
+                        class="logo-mobile-width"
+                        src="https://i.ibb.co/8X7TGc5/shop-disney-logo.jpg"
+                        alt="Shop Disney Logo"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Shop Disney Logo End -->
+          <!-- Shop Disney Logo End -->
 
-<!-- Header Divider Start -->
+          <!-- Header Divider Start -->
 
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td height="0.1" style="background-color: #ccc;"></td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td height="0.1" style="background-color: #ccc"></td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Header Divider end -->
+          <!-- Header Divider end -->
 
-<!-- Sub Nav Menu Start -->
+          <!-- Sub Nav Menu Start -->
 
-         <tr>
-            <td  class="nav-moile-padding" style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td style="text-align: center;padding: 12px 0;">
-                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">DISNEY</a>
-                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">PIXER</a>
-                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">STAR WARS</a>
-                        <a class="nav-item nav-mobile-item" href="https://www.shopdisney.co.uk/" target="_blank">MARVEL</a>
-                        
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td class="nav-moile-padding" style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td style="text-align: center; padding: 12px 0">
+                    <a
+                      class="nav-item nav-mobile-item"
+                      href="https://www.shopdisney.co.uk/"
+                      target="_blank"
+                      >DISNEY</a
+                    >
+                    <a
+                      class="nav-item nav-mobile-item"
+                      href="https://www.shopdisney.co.uk/"
+                      target="_blank"
+                      >PIXER</a
+                    >
+                    <a
+                      class="nav-item nav-mobile-item"
+                      href="https://www.shopdisney.co.uk/"
+                      target="_blank"
+                      >STAR WARS</a
+                    >
+                    <a
+                      class="nav-item nav-mobile-item"
+                      href="https://www.shopdisney.co.uk/"
+                      target="_blank"
+                      >MARVEL</a
+                    >
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Sub Nav Menu End -->
+          <!-- Sub Nav Menu End -->
 
-<!-- Hero Image Start -->
+          <!-- Hero Image Start -->
 
-         <tr>
-            <td style="padding: 0;border-spacing: 0;">
-               <a href="https://www.shopdisney.co.uk/" target="_blank"><img src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg" alt="50% off selected items promotional image" width="100%" style="max-width: 650px;"></a>
+          <tr>
+            <td style="padding: 0; border-spacing: 0">
+              <a href="https://www.shopdisney.co.uk/" target="_blank"
+                ><img
+                  src="https://i.ibb.co/fqdkvKz/disney-fan-friday-hero.jpg"
+                  alt="50% off selected items promotional image"
+                  width="100%"
+                  style="max-width: 650px"
+              /></a>
             </td>
-         </tr>
+          </tr>
 
-<!-- Hero Image End -->
+          <!-- Hero Image End -->
 
-<!-- Main Copy Start -->
+          <!-- Main Copy Start -->
 
-
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px; padding: 0;">
-                  <tr class="text-mobile">
-                     <td style="text-align: center;padding: 12px 0;font-family: 'Noto Sans', sans-serif;font-size: 16px; font-weight: 400;text-decoration: none;color: #333333;">
-                        <h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 28px;font-weight: bold;">50% off Fan Favourites for 24 Hours!</h1>
-                        <p>1. Visit <a href="https://www.shopdisney.co.uk/" target="_blank">shopdisney.co.uk/fan-friday</a>.</p>
-                        <p>2. Select any items from this page and add them to your basket.</p>
-                        <p class="hide-mobile">3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout</p>
-                        <p class="hide-mobile">to receive 50% off these items.</p>  
-                        <p class="hide-desktop">3. Enter code <span style="font-weight: bold;color: #0099ff;">FANFRIDAY</span> at checkout to receive 50% off these items.</p>   
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="border-spacing: 0; max-width: 650px; padding: 0"
+              >
+                <tr class="text-mobile">
+                  <td
+                    style="
+                      text-align: center;
+                      padding: 12px 0;
+                      font-family: 'Noto Sans', sans-serif;
+                      font-size: 16px;
+                      font-weight: 400;
+                      text-decoration: none;
+                      color: #333333;
+                    "
+                  >
+                    <h1
+                      style="
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 28px;
+                        font-weight: bold;
+                      "
+                    >
+                      50% off Fan Favourites for 24 Hours!
+                    </h1>
+                    <p>
+                      1. Visit
+                      <a href="https://www.shopdisney.co.uk/" target="_blank"
+                        >shopdisney.co.uk/fan-friday</a
+                      >.
+                    </p>
+                    <p>
+                      2. Select any items from this page and add them to your
+                      basket.
+                    </p>
+                    <p class="hide-mobile">
+                      3. Enter code
+                      <span style="font-weight: bold; color: #0099ff"
+                        >FANFRIDAY</span
+                      >
+                      at checkout
+                    </p>
+                    <p class="hide-mobile">to receive 50% off these items.</p>
+                    <p class="hide-desktop">
+                      3. Enter code
+                      <span style="font-weight: bold; color: #0099ff"
+                        >FANFRIDAY</span
+                      >
+                      at checkout to receive 50% off these items.
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
+          <!-- Main Copy End -->
 
-<!-- Main Copy End -->
+          <!-- Button / Call to action Start -->
 
-<!-- Button / Call to action Start -->
-
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td style="text-align: center;padding: 20px 0 40px 0;font-size: 17px; font-weight: 500;text-decoration: none;font-family: 'Noto Sans', sans-serif;">
-                        <a class="button-mobile" href="https://www.shopdisney.co.uk/" target="_blank" style="background-color:#0099ff;color: #fff; padding: 15px 70px;text-decoration: none;border-radius: 10px;">Shop Now</a>        
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td
+                    style="
+                      text-align: center;
+                      padding: 20px 0 40px 0;
+                      font-size: 17px;
+                      font-weight: 500;
+                      text-decoration: none;
+                      font-family: 'Noto Sans', sans-serif;
+                    "
+                  >
+                    <a
+                      class="button-mobile"
+                      href="https://www.shopdisney.co.uk/"
+                      target="_blank"
+                      style="
+                        background-color: #0099ff;
+                        color: #fff;
+                        padding: 15px 70px;
+                        text-decoration: none;
+                        border-radius: 10px;
+                      "
+                      >Shop Now</a
+                    >
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Button / Call to action End -->
+          <!-- Button / Call to action End -->
 
-<!-- Divider Start -->
+          <!-- Divider Start -->
 
-         <tr>
-            <td class="divider-mobile-padding" style="padding: 20px; ">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td align="center">
-                        <img class="divider-mobile-size" src="https://i.ibb.co/WnLqw86/divider.jpg" alt="Divider">        
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td class="divider-mobile-padding" style="padding: 20px">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td align="center">
+                    <img
+                      class="divider-mobile-size"
+                      src="https://i.ibb.co/WnLqw86/divider.jpg"
+                      alt="Divider"
+                    />
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Divider End -->
+          <!-- Divider End -->
 
-<!-- Footer Social Start -->
+          <!-- Footer Social Start -->
 
-<!-- Need to use an SVG or higher res jpeg as there's issues on the mobile view -->
+          <!-- Need to use an SVG or higher res jpeg as there's issues on the mobile view -->
 
-         <tr>
-            <td style="padding: 0 0 30px 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td style="text-align: center;">
-                        <p class="mobile-follow-us" style="font-size: 20px;color: #0099ff;font-family: 'Noto Sans', sans-serif;">Follow us</p>
-                        <a href="" target="_blank"><img class="mobile-social-logo" src="https://i.ibb.co/gjqPX52/facebook-icon.jpg" alt="Facebook Logo" style="padding: 0 20px;"></a>
-                        <a href="" target="_blank"><img class="mobile-social-logo" src="https://i.ibb.co/brhV5j7/instagram-icon.jpg" alt="Instagram Logo" style="padding: 0 20px;"></a>       
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0 0 30px 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td style="text-align: center">
+                    <p
+                      class="mobile-follow-us"
+                      style="
+                        font-size: 20px;
+                        color: #0099ff;
+                        font-family: 'Noto Sans', sans-serif;
+                      "
+                    >
+                      Follow us
+                    </p>
+                    <a href="" target="_blank"
+                      ><img
+                        class="mobile-social-logo"
+                        src="https://i.ibb.co/gjqPX52/facebook-icon.jpg"
+                        alt="Facebook Logo"
+                        style="padding: 0 20px"
+                    /></a>
+                    <a href="" target="_blank"
+                      ><img
+                        class="mobile-social-logo"
+                        src="https://i.ibb.co/brhV5j7/instagram-icon.jpg"
+                        alt="Instagram Logo"
+                        style="padding: 0 20px"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Footer Social End -->
+          <!-- Footer Social End -->
 
-<!-- Footer Location Start -->
+          <!-- Footer Location Start -->
 
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;background-color: #f9f9f9;padding: 15px 0;">
-                  <tr style="text-align: center;">
-                     <td>
-                        <a href="https://www.shopdisney.co.uk" target="_blank"><img class="location-mobile-icon" src="https://i.ibb.co/KhBF93D/location-icon.jpg" alt="Location pin icon" style="vertical-align: middle; padding-bottom: 5px;"></a> 
-                        <a class="location-mobile-text" href="https://www.shopdisney.co.uk" target="_blank" style="font-size: 20px; text-decoration: none; color: #333333;padding-left: 10px;font-family: 'Noto Sans', sans-serif;">Find a Disney Store in your area</a>
-                     </td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0">
+              <table
+                width="100%"
+                style="
+                  border-spacing: 0;
+                  max-width: 650px;
+                  background-color: #f9f9f9;
+                  padding: 15px 0;
+                "
+              >
+                <tr style="text-align: center">
+                  <td>
+                    <a href="https://www.shopdisney.co.uk" target="_blank"
+                      ><img
+                        class="location-mobile-icon"
+                        src="https://i.ibb.co/KhBF93D/location-icon.jpg"
+                        alt="Location pin icon"
+                        style="vertical-align: middle; padding-bottom: 5px"
+                    /></a>
+                    <a
+                      class="location-mobile-text"
+                      href="https://www.shopdisney.co.uk"
+                      target="_blank"
+                      style="
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: #333333;
+                        padding-left: 10px;
+                        font-family: 'Noto Sans', sans-serif;
+                      "
+                      >Find a Disney Store in your area</a
+                    >
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Footer Location End -->
+          <!-- Footer Location End -->
 
-<!-- Header Divider Start -->
+          <!-- Header Divider Start -->
 
-         <tr class="hide-mobile">
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td height="0.1" style="background-color: #ccc;"></td>
-                  </tr>
-               </table>
+          <tr class="hide-mobile">
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td height="0.1" style="background-color: #ccc"></td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Header Divider end -->
+          <!-- Header Divider end -->
 
-<!-- Footer Logo Start -->
+          <!-- Footer Logo Start -->
 
-         <tr class="hide-mobile">
-            <td style="padding: 0px;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td style="text-align: center; padding: 20px 0; vertical-align: middle;">
-                        <a href="" target="_blank"><img src="https://i.ibb.co/v4dW9v3/disney-logo.jpg" alt="Disney Logo"></a>
-                        <img src="https://i.ibb.co/zRpSxML/vertical-divider.jpg" alt="" style="padding-bottom: 5px;">
-                        <a href="" target="_blank"><img src="https://i.ibb.co/gdWzw70/pixar-logo.jpg" alt="Pixar Logo"></a> 
-                        <img src="https://i.ibb.co/zRpSxML/vertical-divider.jpg" alt="" style="padding-bottom: 5px;">
-                        <a href="" target="_blank"><img src="https://i.ibb.co/r2B5q1n/starwars-logo.jpg" alt="Star WarsLogo"></a> 
-                        <img src="https://i.ibb.co/zRpSxML/vertical-divider.jpg" alt="" style="padding-bottom: 5px;">
-                        <a href="" target="_blank"><img src="https://i.ibb.co/BLkhvxH/marvel-logo.jpg" alt="Marvel Logo"></a>     
-                     </td>
-                  </tr>
-               </table>
+          <tr class="hide-mobile">
+            <td style="padding: 0px">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td
+                    style="
+                      text-align: center;
+                      padding: 20px 0;
+                      vertical-align: middle;
+                    "
+                  >
+                    <a href="" target="_blank"
+                      ><img
+                        src="https://i.ibb.co/v4dW9v3/disney-logo.jpg"
+                        alt="Disney Logo"
+                    /></a>
+                    <img
+                      src="https://i.ibb.co/zRpSxML/vertical-divider.jpg"
+                      alt=""
+                      style="padding-bottom: 5px"
+                    />
+                    <a href="" target="_blank"
+                      ><img
+                        src="https://i.ibb.co/gdWzw70/pixar-logo.jpg"
+                        alt="Pixar Logo"
+                    /></a>
+                    <img
+                      src="https://i.ibb.co/zRpSxML/vertical-divider.jpg"
+                      alt=""
+                      style="padding-bottom: 5px"
+                    />
+                    <a href="" target="_blank"
+                      ><img
+                        src="https://i.ibb.co/r2B5q1n/starwars-logo.jpg"
+                        alt="Star WarsLogo"
+                    /></a>
+                    <img
+                      src="https://i.ibb.co/zRpSxML/vertical-divider.jpg"
+                      alt=""
+                      style="padding-bottom: 5px"
+                    />
+                    <a href="" target="_blank"
+                      ><img
+                        src="https://i.ibb.co/BLkhvxH/marvel-logo.jpg"
+                        alt="Marvel Logo"
+                    /></a>
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Footer logo End -->
+          <!-- Footer logo End -->
 
-<!-- Header Divider Start -->
+          <!-- Header Divider Start -->
 
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td height="0.2" style="background-color: #ccc;"></td>
-                  </tr>
-               </table>
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td height="0.2" style="background-color: #ccc"></td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Header Divider end -->
+          <!-- Header Divider end -->
 
-<!-- Footer Copy Start -->
+          <!-- Footer Copy Start -->
 
-         <tr>
-            <td style="padding: 0;">
-               <table width="100%" style="border-spacing: 0;max-width: 650px;">
-                  <tr>
-                     <td class="footer-mobile-text" style="text-align: left;padding: 12px 20px;font-size: 12px; text-decoration: none;">
-                        
-                        <p>Please do not reply to this communication, as unfortunately we cannot reply to you individually. 
-                           This email has been sent as you have previously consented to receive updates and information from Disney. 
-                           If you would now like to stop receiving marketing emails please <a href="#">click here</a> to unsubscribe. 
-                           If you would like to update any of your personal details please <a href="#">click here</a> to update your account. 
-                           Disney’s policy is to respect and protect individual’s privacy. 
-                           If you have questions about how or if your personal details will be used, you can read our <a href="#">Privacy Policy</a>.</p>
+          <tr>
+            <td style="padding: 0">
+              <table width="100%" style="border-spacing: 0; max-width: 650px">
+                <tr>
+                  <td
+                    class="footer-mobile-text"
+                    style="
+                      text-align: left;
+                      padding: 12px 20px;
+                      font-size: 12px;
+                      text-decoration: none;
+                    "
+                  >
+                    <p>
+                      Please do not reply to this communication, as
+                      unfortunately we cannot reply to you individually. This
+                      email has been sent as you have previously consented to
+                      receive updates and information from Disney. If you would
+                      now like to stop receiving marketing emails please
+                      <a href="#">click here</a> to unsubscribe. If you would
+                      like to update any of your personal details please
+                      <a href="#">click here</a> to update your account.
+                      Disney’s policy is to respect and protect individual’s
+                      privacy. If you have questions about how or if your
+                      personal details will be used, you can read our
+                      <a href="#">Privacy Policy</a>.
+                    </p>
 
-                          <p>Sent to you by: The Walt Disney Company Limited, Registered in England and Wales.
-                          <br>Registration Number: 00530051.                           
-                          <br>3 Queen Caroline Street, Hammersmith, London, W6 9PE.Registration Number: 00530051.</p>   
-                           
-                           <p>Tel: +44 (0)20 8222 1000                                                                                                                                                   
-                           <br>For any questions please visit our 
-                           <br><a href="">Help Centre</a></p>
-                           
-                           <p>All information correct at time of distribution.</p>
-                           
-                           <p>© Disney
-                           <br>© Disney•Pixar
-                           <br>© & ™ Lucasfilm LTD
-                           <br> © Marvel</p>          
-                     </td>
-                  </tr>
-               </table>
+                    <p>
+                      Sent to you by: The Walt Disney Company Limited,
+                      Registered in England and Wales. <br />Registration
+                      Number: 00530051. <br />3 Queen Caroline Street,
+                      Hammersmith, London, W6 9PE.Registration Number: 00530051.
+                    </p>
+
+                    <p>
+                      Tel: +44 (0)20 8222 1000 <br />For any questions please
+                      visit our <br /><a href="">Help Centre</a>
+                    </p>
+
+                    <p>All information correct at time of distribution.</p>
+
+                    <p>
+                      © Disney <br />© Disney•Pixar <br />© & ™ Lucasfilm LTD
+                      <br />
+                      © Marvel
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
-         </tr>
+          </tr>
 
-<!-- Footer Copy End -->
+          <!-- Footer Copy End -->
+        </table>
 
-
-      </table>
-
-   <!--[if (gte mso 9)|(IE)]>
+        <!--[if (gte mso 9)|(IE)]>
    </td>
    </tr>
    </table>
    <![endif]-->
-
-   </div>
-</center> 
-</body>
+      </div>
+    </center>
+  </body>
 </html>
